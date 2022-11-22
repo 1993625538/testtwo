@@ -1,0 +1,66 @@
+.operate-chart-box{
+    position: absolute;
+    right: 3rem;
+    top: 10%;
+    width: auto;
+    height: 3.75rem;
+    border-radius: 6px;
+    opacity: 1;
+    background: #EEEEEE;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+
+}
+.select-chart{
+    display: inline-block;
+    position: relative;
+    margin: 0.4375rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 6px;
+    opacity: 1;
+    
+}
+.bgc-white{
+    background: #FFFFFF;
+}
+.chart-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chart-options{
+    position: absolute;
+    left: 0px;
+    top: calc(100% + 4px);
+    width: 16rem;
+    height: 9.375rem;
+    border-radius: 6px;
+    opacity: 1;
+    background: #EEEEEE;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+.chart-options div{
+    flex: 1;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-family: var(--NSC);
+    font-size: var(--font1_5);
+    font-weight: normal;
+
+
+    color: var(--fntC3B);
+}
+.chart-options div:nth-child(-n+2){
+    border-bottom:1px dotted var(--fntCB0);
+}
+.active-chart{
+    background: rgba(138, 216, 121, 0.1);
+}
